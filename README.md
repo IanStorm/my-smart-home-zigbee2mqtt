@@ -1,0 +1,1 @@
+# my-smart-home-zigbee2mqtt
