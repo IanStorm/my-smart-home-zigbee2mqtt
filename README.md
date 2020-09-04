@@ -15,7 +15,7 @@ See how to put this repo in action at [IanStorm/my-smart-home-ras-pi](https://gi
 ## How to use in "production"? 👨‍💼 👩‍💼
 
 1. Follow ["How to get a pre-built Docker image?"](#-how-to-get-a-pre-built-docker-image-☁️).
-2. Ensure to have a running MQTT broker in the same network.
+2. Ensure to have a running MQTT broker on port `1883` in the same network.
 2. Start a Docker instance:
 ```
 $	docker run \
@@ -35,7 +35,7 @@ Make sure you have installed *Visual Studio Code*.
 2. `cd` inside the cloned folder.
 2. In `data/configuration.yaml` set `permit_join: true` (instead of `false`).
 2. Build the Docker image: Run the vscode task `build`.
-2. Ensure to have a running MQTT broker in the same network.
+2. Ensure to have a running MQTT broker on port `1883` in the same network .
 2. Start a Docker instance:
 ```
 $	docker run \
