@@ -12,3 +12,4 @@ mqtt: # MQTT settings
 
 serial: # Serial settings
   port: /dev/ttyACM0 # Location of CC2531 USB sniffer
+  disable_led: true
