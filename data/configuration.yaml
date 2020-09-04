@@ -2,6 +2,7 @@
 homeassistant: false
 
 # allow new devices to join
+# TODO: Set to `false` after all devices have been paired.
 permit_join: true
 
 # MQTT settings
