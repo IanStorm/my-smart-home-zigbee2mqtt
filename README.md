@@ -10,6 +10,44 @@ Allows usage of any Zigbee device in my home.
 **🐳 Make sure you have installed *Docker*.**
 
 
+## How to use in "production"? 👨‍💼 👩‍💼
+
+1. Follow ["How to get a pre-built Docker image?"](#-how-to-get-a-pre-built-docker-image-☁️).
+2. Ensure to have a running MQTT broker in the same network.
+2. Start a Docker instance:
+```
+$	docker run \
+		--rm \
+		-d \
+		-t \
+		--device=/dev/ttyACM0 \
+		ianstorm/my-smart-home-zigbee2mqtt
+```
+
+
+## How to develop? 👨‍💻 👩‍💻
+
+Make sure you have installed *Visual Studio Code*.
+
+1. Clone this repository.
+2. `cd` inside the cloned folder.
+2. In `data/configuration.yaml` set `permit_join: true` (instead of `false`).
+2. Build the Docker image: Run the vscode task `build`.
+2. Ensure to have a running MQTT broker in the same network.
+2. Start a Docker instance:
+```
+$	docker run \
+		--rm \
+		-i \
+		-t \
+		--device=/dev/ttyACM0 \
+		-v $(pwd)/data/:/app/data/ \
+		ianstorm/my-smart-home-zigbee2mqtt
+```
+*
+	* `--device=/dev/ttyACM0`: Makes the host's CC2135 available to the Docker container (see `data/configuration.yaml`)
+
+
 ## Appendix
 
 
