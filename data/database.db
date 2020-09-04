@@ -147,3 +147,57 @@
 	"meta": {},
 	"lastSeen": null
 }
+{
+	"id": 2,
+	"type": "EndDevice",
+	"ieeeAddr": "0x00158d00045ce46a",
+	"nwkAddr": 47581,
+	"manufId": 4151,
+	"manufName": "LUMI",
+	"powerSource": "Battery",
+	"modelId": "lumi.sensor_magnet.aq2",
+	"epList": [
+		1
+	],
+	"endpoints": {
+		"1": {
+			"profId": 260,
+			"epId": 1,
+			"devId": 24321,
+			"inClusterList": [
+				0,
+				3,
+				65535,
+				6
+			],
+			"outClusterList": [
+				0,
+				4,
+				65535
+			],
+			"clusters": {
+				"genBasic": {
+					"attributes": {
+						"manufacturerName": "LUMI",
+						"powerSource": 3,
+						"zclVersion": 1,
+						"stackVersion": 2,
+						"hwVersion": 2,
+						"dateCode": "20161128",
+						"swBuildId": "3000-0001"
+					}
+				}
+			},
+			"binds": []
+		}
+	},
+	"appVersion": 3,
+	"stackVersion": 2,
+	"hwVersion": 2,
+	"dateCode": "20161128",
+	"swBuildId": "3000-0001",
+	"zclVersion": 1,
+	"interviewCompleted": true,
+	"meta": {},
+	"lastSeen": 1599232724290
+}
