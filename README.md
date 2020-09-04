@@ -42,7 +42,7 @@ $	docker run \
 		-t \
 		--device=/dev/ttyACM0 \
 		-v $(pwd)/data/:/app/data/ \
-		ianstorm/my-smart-home-zigbee2mqtt
+		my-smart-home-zigbee2mqtt
 ```
 *
 	* `--device=/dev/ttyACM0`: Makes the host's CC2135 available to the Docker container (see `data/configuration.yaml`)
