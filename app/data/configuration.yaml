@@ -13,6 +13,11 @@ serial: # Serial settings
   port: /dev/ttyACM0 # Location of CC2531 USB sniffer
   disable_led: true
 
+advanced:
+  cache_state: true
+  cache_state_persistent: true
+  cache_state_send_on_startup: true
+
 devices:
   '0x00158d00045ce46a':
     friendly_name: '0x00158d00045ce46a'
