@@ -23,3 +23,5 @@ devices:
     friendly_name: 'Wohnküche, gr. Balkontür'
   '0x00158d00045ce46a':
     friendly_name: 'Wohnküche, kl. Balkontür'
+  '0x00158d00045cf788':
+    friendly_name: 'Arbeitszimmer, Balkontür'
