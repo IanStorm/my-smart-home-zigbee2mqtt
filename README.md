@@ -23,7 +23,7 @@ $	docker run \
 		-d \
 		-t \
 		--device=/dev/ttyACM0 \
-		-v /tmp/my-smart-home-zigbee2mqtt/data/state.json:/app/data/state.json \
+		-v /run/my-smart-home-zigbee2mqtt/data/state.json:/app/data/state.json \
 		ianstorm/my-smart-home-zigbee2mqtt
 ```
 *
