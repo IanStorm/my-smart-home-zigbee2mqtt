@@ -20,10 +20,10 @@ advanced:
 
 devices:
   '0x00158d00045cbbc2':
-    friendly_name: 'Wohnküche, gr. Balkontür'
+    friendly_name: 'contact/living-kitchenArea/balconyDoors/large'
   '0x00158d00045cc568':
-    friendly_name: 'Schlafzimmer, re. Fenster'
+    friendly_name: 'contact/bedroom/windows/right'
   '0x00158d00045ce46a':
-    friendly_name: 'Wohnküche, kl. Balkontür'
+    friendly_name: 'contact/living-kitchenArea/balconyDoors/small'
   '0x00158d00045cf788':
-    friendly_name: 'Arbeitszimmer, Balkontür'
+    friendly_name: 'contact/study/balconyDoor'
