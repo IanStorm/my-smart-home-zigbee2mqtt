@@ -39,6 +39,7 @@ Make sure you have installed *Visual Studio Code*.
 2. In `data/configuration.yaml` set `permit_join: true` (instead of `false`).
 2. Build the Docker image: Run the vscode task `build`.
 2. Ensure to have a running MQTT broker available via `mqtt-broker:1883`.
+2. Ensure to have the latest firmware running on the USB Zigbee sniffer *(here: CC2531)*, see [how to flash the CC2531](https://www.zigbee2mqtt.io/information/flashing_the_cc2531.html).
 2. Start a Docker instance:
 ```
 $	docker run \
