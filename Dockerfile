@@ -1,4 +1,4 @@
-FROM koenkk/zigbee2mqtt:1.16.2
+FROM koenkk/zigbee2mqtt:1.17.0
 
 ENV TZ="Europe/Berlin"
 
