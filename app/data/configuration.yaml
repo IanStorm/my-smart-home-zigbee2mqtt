@@ -27,3 +27,5 @@ devices:
     friendly_name: 'contact/living-kitchenArea/balconyDoors/small'
   '0x00158d00045cf788':
     friendly_name: 'contact/study/balconyDoor'
+  '0x00158d00053f19c5':
+    friendly_name: 'temperature/study'
