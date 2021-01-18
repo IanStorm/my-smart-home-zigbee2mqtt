@@ -29,3 +29,5 @@ devices:
     friendly_name: 'contact/study/balconyDoor'
   '0x00158d00053f19c5':
     friendly_name: 'temperature/study'
+  '0x00158d0005405541':
+    friendly_name: 'temperature/balcony'
