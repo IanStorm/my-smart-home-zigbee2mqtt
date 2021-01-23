@@ -4,10 +4,8 @@ permit_join: false
 
 mqtt: # MQTT settings
   base_topic: zigbee2mqtt # MQTT base topic for zigbee2mqtt MQTT messages
+  force_disable_retain: false # Store last published message and re-send to newly connected client
   server: 'mqtt://mqtt-broker:1883'
-  # MQTT server authentication, uncomment if required:
-  # user: my_user
-  # password: my_password
 
 serial: # Serial settings
   port: /dev/ttyACM0 # Location of CC2531 USB sniffer
@@ -21,13 +19,19 @@ advanced:
 devices:
   '0x00158d00045cbbc2':
     friendly_name: 'contact/living-kitchenArea/balconyDoors/large'
+    retain: true # Store last published message and re-send to newly connected client
   '0x00158d00045cc568':
     friendly_name: 'contact/bedroom/windows/right'
+    retain: true # Store last published message and re-send to newly connected client
   '0x00158d00045ce46a':
     friendly_name: 'contact/living-kitchenArea/balconyDoors/small'
+    retain: true # Store last published message and re-send to newly connected client
   '0x00158d00045cf788':
     friendly_name: 'contact/study/balconyDoor'
+    retain: true # Store last published message and re-send to newly connected client
   '0x00158d00053f19c5':
     friendly_name: 'temperature/study'
+    retain: true # Store last published message and re-send to newly connected client
   '0x00158d0005405541':
     friendly_name: 'temperature/balcony'
+    return: true # Store last published message and re-send to newly connected client
