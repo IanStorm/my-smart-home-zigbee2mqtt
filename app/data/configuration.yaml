@@ -21,7 +21,7 @@ devices:
     friendly_name: 'contact/living-kitchenArea/balconyDoors/large'
     retain: true # Store last published message and re-send to newly connected client
   '0x00158d00045cc568':
-    friendly_name: 'contact/bedroom/windows/right'
+    friendly_name: 'contact/bedroom/windows/righty'
     retain: true # Store last published message and re-send to newly connected client
   '0x00158d00045ce46a':
     friendly_name: 'contact/living-kitchenArea/balconyDoors/small'
