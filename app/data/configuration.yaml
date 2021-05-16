@@ -36,3 +36,6 @@ devices:
   '0x00158d0005405541':
     friendly_name: 'temperature/balcony'
     return: true
+  '0x00158d00056e4e4a':
+    friendly_name: 'temperature/bedroom'
+    return: true
