@@ -16,22 +16,23 @@ advanced:
   cache_state_persistent: true
   cache_state_send_on_startup: true
 
+# ⬇ `retain: true` ... Store last published message and re-send to newly connected client
 devices:
   '0x00158d00045cbbc2':
     friendly_name: 'contact/living-kitchenArea/balconyDoors/large'
-    retain: true # Store last published message and re-send to newly connected client
+    retain: true
   '0x00158d00045cc568':
     friendly_name: 'contact/bedroom/windows/righty'
-    retain: true # Store last published message and re-send to newly connected client
+    retain: true
   '0x00158d00045ce46a':
     friendly_name: 'contact/living-kitchenArea/balconyDoors/small'
-    retain: true # Store last published message and re-send to newly connected client
+    retain: true
   '0x00158d00045cf788':
     friendly_name: 'contact/study/balconyDoor'
-    retain: true # Store last published message and re-send to newly connected client
+    retain: true
   '0x00158d00053f19c5':
     friendly_name: 'temperature/study'
-    retain: true # Store last published message and re-send to newly connected client
+    retain: true
   '0x00158d0005405541':
     friendly_name: 'temperature/balcony'
-    return: true # Store last published message and re-send to newly connected client
+    return: true
