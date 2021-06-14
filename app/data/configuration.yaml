@@ -37,13 +37,13 @@ devices:
     retain: true
   '0x00158d0005405541':
     friendly_name: 'temperature/balcony'
-    return: true
+    retain: true
   '0x00158d00056e4e4a':
     friendly_name: 'temperature/bedroom'
-    return: true
+    retain: true
   '0x00158d00058a62da':
     friendly_name: 'temperature/bathroom'
-    return: true
+    retain: true
   '0x00158d00066924f4':
     friendly_name: 'temperature/living-kitchenArea'
-    return: true
+    retain: true
