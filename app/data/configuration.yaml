@@ -47,3 +47,6 @@ devices:
   '0x00158d00066924f4':
     friendly_name: 'temperature/living-kitchenArea'
     retain: true
+  '0x804b50fffe5e90a0':
+    friendly_name: 'repeater/living-kitchenArea'
+    retain: true
