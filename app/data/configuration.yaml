@@ -17,6 +17,7 @@ advanced:
   cache_state_send_on_startup: true
   last_seen: 'ISO_8601'
   log_level: debug
+  network_key: '!secret network_key'
 
 availability: false
 

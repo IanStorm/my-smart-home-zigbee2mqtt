@@ -1,5 +1,6 @@
 {
 	"recommendations": [
+		"anbuselvan.vscode-symlink",
 		"editorconfig.editorconfig",
 		"ms-vscode-remote.remote-ssh",
 		"ms-vscode-remote.remote-wsl",

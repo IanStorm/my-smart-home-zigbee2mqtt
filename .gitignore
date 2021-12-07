@@ -1,2 +1,4 @@
 # + zigbee2mqtt
 app/data/log/
+
+secret.yaml

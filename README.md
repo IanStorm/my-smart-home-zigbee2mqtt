@@ -62,3 +62,5 @@ $	docker pull ianstorm/my-smart-home-zigbee2mqtt:latest
 
 * [Official Zigbee2MQTT documentation: Docker](https://www.zigbee2mqtt.io/information/docker.html#docker)
 * [Official Zigbee2MQTT documentation: Configuration](https://www.zigbee2mqtt.io/information/configuration.html#configuration)
+* [Official Zigbee2MQTT documentation: How to secure network](https://www.zigbee2mqtt.io/advanced/zigbee/03_secure_network.html)
+* [Official Zigbee2MQTT documentation: How to hide secrets](https://www.zigbee2mqtt.io/guide/configuration/zigbee-network.html#specifying-network-key-in-a-different-file)
