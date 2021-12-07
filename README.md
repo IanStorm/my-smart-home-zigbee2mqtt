@@ -27,6 +27,7 @@ $	docker run \
 		ianstorm/my-smart-home-zigbee2mqtt
 ```
 *
+	* `--device=/dev/ttyACM0`: Makes the host's CC2135 available to the Docker container (see `app/data/configuration.yaml`)
 	* `-v [...]/state.json[...]`: Ensure `state.json` is initially set as `{}`
 
 
@@ -36,22 +37,14 @@ Make sure you have installed *Visual Studio Code*.
 
 1. Clone this repository.
 2. `cd` inside the cloned folder.
-2. In `data/configuration.yaml` set `permit_join: true` (instead of `false`).
-2. Build the Docker image: Run the vscode task `build`.
-2. Ensure to have a running MQTT broker available via `mqtt-broker:1883`.
+2. In `data/configuration.yaml`:
+	1. Set `permit_join: true` (instead of `false`)
+	2. Add `frontend: {}`
 2. Ensure to have the latest firmware running on the USB Zigbee sniffer *(here: CC2531)*, see [how to flash the CC2531](https://www.zigbee2mqtt.io/information/flashing_the_cc2531.html).
-2. Start a Docker instance:
+2. Start the Docker instances:
 ```
-$	docker run \
-		--rm \
-		-i \
-		-t \
-		--device=/dev/ttyACM0 \
-		-v $(pwd)/data/:/app/data/ \
-		my-smart-home-zigbee2mqtt
+docker-compose up
 ```
-*
-	* `--device=/dev/ttyACM0`: Makes the host's CC2135 available to the Docker container (see `app/data/configuration.yaml`)
 
 
 ## Appendix

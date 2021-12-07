@@ -1,0 +1,31 @@
+version: "3"
+
+
+services:
+
+  my-smart-home-mqtt:
+    image: ianstorm/my-smart-home-mqtt:latest
+    networks:
+      zigbee-net:
+        aliases:
+          - mqtt-broker
+    ports:
+      - 1883:1883
+
+  my-smart-home-zigbee2mqtt:
+    build: .
+    # image: ianstorm/my-smart-home-zigbee2mqtt:latest
+    depends_on:
+      - my-smart-home-mqtt
+    devices:
+      - /dev/ttyACM0
+    networks:
+      - zigbee-net
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data/:/app/data/
+
+
+networks:
+  zigbee-net:
