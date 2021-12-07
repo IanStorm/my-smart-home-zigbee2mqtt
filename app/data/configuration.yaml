@@ -18,6 +18,8 @@ advanced:
   last_seen: 'ISO_8601'
   log_level: debug
 
+availability: false
+
 # ⬇ `retain: true` ... Store last published message and re-send to newly connected client
 devices:
   '0x00158d00045cbbc2':
