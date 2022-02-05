@@ -14,7 +14,6 @@ services:
 
   my-smart-home-zigbee2mqtt:
     build: .
-    # image: ianstorm/my-smart-home-zigbee2mqtt:latest
     depends_on:
       - my-smart-home-mqtt
     devices:
@@ -24,7 +23,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./data/:/app/data/
+      - ./app/data/:/app/data/
 
 
 networks:
