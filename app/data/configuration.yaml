@@ -59,6 +59,9 @@ devices:
   '0x00158d0007ecd6dd':
     friendly_name: 'contact/bedroom/door'
     retain: true
+  '0x00158d0007ef754e':
+    friendly_name: 'contact/bathroom/door'
+    retain: true
   '0x804b50fffe5e90a0':
     friendly_name: 'repeater/living-kitchenArea'
     retain: true
