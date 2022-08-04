@@ -39,6 +39,7 @@ Make sure you have installed *Visual Studio Code*.
 2. `cd` inside the cloned folder.
 2. In `./app/data/configuration.yaml`:
 	1. Set `permit_join: true` (instead of `false`)
+	2. Set `availability: true` (instead of `false`)
 	2. Add `frontend: {}`
 2. Ensure to have the latest firmware running on the USB Zigbee sniffer *(here: CC2531)*, see [how to flash the CC2531](https://www.zigbee2mqtt.io/information/flashing_the_cc2531.html).
 2. Start the Docker instances:
