@@ -27,7 +27,7 @@ $	docker run \
 		ianstorm/my-smart-home-zigbee2mqtt
 ```
 *
-	* `--device=/dev/ttyACM0`: Makes the host's CC2135 available to the Docker container (see `app/data/configuration.yaml`)
+	* `--device=/dev/ttyACM0`: Makes the host's CC2531 available to the Docker container (see `app/data/configuration.yaml`)
 	* `-v [...]/state.json[...]`: Ensure `state.json` is initially set as `{}`
 
 
