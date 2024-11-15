@@ -21,7 +21,11 @@ advanced:
   log_level: debug
   network_key: '!secret network_key'
 
-availability: false
+availability:
+  active:
+    timeout: 5 # 5m
+  passive:
+    timeout: 120 # 2h
 
 frontend:
   port: 8099

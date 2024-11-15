@@ -40,7 +40,6 @@ Make sure you have installed *Visual Studio Code*.
 2. `cd` inside the cloned folder.
 2. In `./app/data/configuration.yaml`:
 	1. Set `permit_join: true` (instead of `false`)
-	2. Set `availability: true` (instead of `false`)
 2. Ensure to have the latest firmware running on the USB Zigbee gateway *(here: ConBee III)*, see [deCONZ firmware update](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually).
 2. Start the Docker instances:
 ```sh
