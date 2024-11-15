@@ -17,11 +17,11 @@ services:
     depends_on:
       - my-smart-home-mqtt
     devices:
-      - /dev/ttyACM0
+      - /dev/ttyUSB0
     networks:
       - zigbee-net
     ports:
-      - 8080:8080
+      - 8099:8099
     volumes:
       - ./app/data/:/app/data/
 

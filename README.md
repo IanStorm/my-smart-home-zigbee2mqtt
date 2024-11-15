@@ -17,18 +17,19 @@ See how to put this repo in action at [IanStorm/my-smart-home-ras-pi](https://gi
 1. Follow ["How to get a pre-built Docker image?"](#-how-to-get-a-pre-built-docker-image-☁️).
 2. Ensure to have a running MQTT broker available via `mqtt-broker:1883`.
 2. Start a Docker instance:
-```
-$	docker run \
+```sh
+docker run \
 		--rm \
 		-d \
 		-t \
-		--device=/dev/ttyACM0 \
+		--device=/dev/ttyUSB0 \
 		-v /var/opt/my-smart-home-zigbee2mqtt/data/state.json:/app/data/state.json \
+		-p 8099:8099 \
 		ianstorm/my-smart-home-zigbee2mqtt
 ```
 *
-	* `--device=/dev/ttyACM0`: Makes the host's CC2531 available to the Docker container (see `app/data/configuration.yaml`)
-	* `-v [...]/state.json[...]`: Ensure `state.json` is initially set as `{}`
+	* `--device=[…]`: Makes the host's Zigbee gateway *(here: ConBee III)* available to the Docker container (see `app/data/configuration.yaml`)
+	* `-v […]/[…]state.json`: Ensure `state.json` is initially set as `{}`
 
 
 ## How to develop? 👨‍💻 👩‍💻
@@ -40,13 +41,12 @@ Make sure you have installed *Visual Studio Code*.
 2. In `./app/data/configuration.yaml`:
 	1. Set `permit_join: true` (instead of `false`)
 	2. Set `availability: true` (instead of `false`)
-	2. Add `frontend: {}`
-2. Ensure to have the latest firmware running on the USB Zigbee sniffer *(here: CC2531)*, see [how to flash the CC2531](https://www.zigbee2mqtt.io/information/flashing_the_cc2531.html).
+2. Ensure to have the latest firmware running on the USB Zigbee gateway *(here: ConBee III)*, see [deCONZ firmware update](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually).
 2. Start the Docker instances:
-```
+```sh
 docker-compose up
 ```
-
+6. Open any browser and enter `http://localhost:8099`.
 
 ## Appendix
 
@@ -54,8 +54,8 @@ docker-compose up
 ### How to get a pre-built Docker image? ☁️
 
 Get the latest Docker image from Docker Hub:
-```
-$	docker pull ianstorm/my-smart-home-zigbee2mqtt:latest
+```sh
+docker pull ianstorm/my-smart-home-zigbee2mqtt:latest
 ```
 
 
