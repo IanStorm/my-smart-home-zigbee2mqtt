@@ -1,4 +1,4 @@
-FROM koenkk/zigbee2mqtt:2.11.0
+FROM koenkk/zigbee2mqtt:2.12.0
 
 # ENV DEBUG=zigbee-herdsman*
 ENV TZ="Europe/Berlin"
